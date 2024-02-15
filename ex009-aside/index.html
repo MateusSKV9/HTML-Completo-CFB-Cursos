@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag aside</title>
+<style>
+        nav {
+            background-color: black;
+            padding: 5px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        nav a:hover {
+            background-color: red;
+        }
+        aside {
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+            width: 250px;
+            height: 400px;
+        }
+
+        aside aside {
+            background-color: darkgray;
+            width: 80%;
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tag aside</h1>
+    <main>
+        <aside class="esquerda">
+            <nav>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </nav>
+            <p>Neste curso de HTML do CFB Cursos, vamos aprender todas as tags válidas do HTML5.</p>
+            <aside>
+                <h3>NOTA</h3>
+                <p>www.youtube.com/cfbcursos</p>
+            </aside>
+        </aside>
+        <aside class="center">
+            <h3>CFB Cursos</h3>
+            <p>Cursos</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+        </aside>
+        <aside class="right">
+            <h2>Conteúdo à direita</h2>
+        </aside>
+    </main>
+</body>
+</html>
